@@ -1,10 +1,3 @@
-//
-//  JSRApp.swift
-//  JSR
-//
-//  Created by Divy Srivastava on 29/06/24.
-//
-
 import SwiftUI
 
 @main

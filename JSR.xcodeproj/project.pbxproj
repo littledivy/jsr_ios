@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A13D99B2C2FDB5D00CD92D7 /* openapi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5A13D9992C2FDB5C00CD92D7 /* openapi.yml */; };
+		5A13D99C2C2FDB5D00CD92D7 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */; };
+		5A13D9A52C2FDC0F00CD92D7 /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 5A13D9A42C2FDC0F00CD92D7 /* OpenAPIRuntime */; };
+		5A13D9A82C2FDC1F00CD92D7 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 5A13D9A72C2FDC1F00CD92D7 /* OpenAPIURLSession */; };
+		5A13D9B22C3030B300CD92D7 /* PackageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13D9B12C3030B300CD92D7 /* PackageCardView.swift */; };
+		5A13D9B62C30318300CD92D7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13D9B52C30318300CD92D7 /* HomeView.swift */; };
+		5A13D9BA2C30331200CD92D7 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13D9B92C30331200CD92D7 /* ExploreView.swift */; };
+		5A13D9BD2C30332E00CD92D7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13D9BC2C30332E00CD92D7 /* ProfileView.swift */; };
+		5A4EA6732C3051880015DC3A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EA6722C3051880015DC3A /* SettingsView.swift */; };
+		5A5427002C311D2800CE2514 /* PackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5426FF2C311D2800CE2514 /* PackageView.swift */; };
+		5A5427032C31960200CE2514 /* PackageVersionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5427022C31960200CE2514 /* PackageVersionsView.swift */; };
+		5A5427062C31984B00CE2514 /* PackageScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5427052C31984B00CE2514 /* PackageScoreView.swift */; };
+		5A5427092C31ADB800CE2514 /* ScopesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5427082C31ADB800CE2514 /* ScopesView.swift */; };
+		5A54270C2C31BACB00CE2514 /* ScopeMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54270B2C31BACB00CE2514 /* ScopeMembersView.swift */; };
 		5AA8B5612C2FD11A00CEAF89 /* JSRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */; };
 		5AA8B5632C2FD11A00CEAF89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8B5622C2FD11A00CEAF89 /* ContentView.swift */; };
 		5AA8B5652C2FD11B00CEAF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA8B5642C2FD11B00CEAF89 /* Assets.xcassets */; };
@@ -14,6 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A13D9992C2FDB5C00CD92D7 /* openapi.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = openapi.yml; path = ../../JSRClient/Sources/openapi.yml; sourceTree = "<group>"; };
+		5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = "openapi-generator-config.yaml"; path = "../../JSRClient/Sources/openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		5A13D9B12C3030B300CD92D7 /* PackageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCardView.swift; sourceTree = "<group>"; };
+		5A13D9B52C30318300CD92D7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5A13D9B92C30331200CD92D7 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		5A13D9BC2C30332E00CD92D7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5A4EA6722C3051880015DC3A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5A5426FF2C311D2800CE2514 /* PackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageView.swift; sourceTree = "<group>"; };
+		5A5427022C31960200CE2514 /* PackageVersionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageVersionsView.swift; sourceTree = "<group>"; };
+		5A5427052C31984B00CE2514 /* PackageScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageScoreView.swift; sourceTree = "<group>"; };
+		5A5427082C31ADB800CE2514 /* ScopesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopesView.swift; sourceTree = "<group>"; };
+		5A54270B2C31BACB00CE2514 /* ScopeMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeMembersView.swift; sourceTree = "<group>"; };
 		5AA8B55D2C2FD11A00CEAF89 /* JSR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSRApp.swift; sourceTree = "<group>"; };
 		5AA8B5622C2FD11A00CEAF89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A13D9A82C2FDC1F00CD92D7 /* OpenAPIURLSession in Frameworks */,
+				5A13D9A52C2FDC0F00CD92D7 /* OpenAPIRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +79,22 @@
 		5AA8B55F2C2FD11A00CEAF89 /* JSR */ = {
 			isa = PBXGroup;
 			children = (
+				5A13D9B12C3030B300CD92D7 /* PackageCardView.swift */,
 				5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */,
+				5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */,
+				5A13D9992C2FDB5C00CD92D7 /* openapi.yml */,
+				5A13D9B52C30318300CD92D7 /* HomeView.swift */,
 				5AA8B5622C2FD11A00CEAF89 /* ContentView.swift */,
 				5AA8B5642C2FD11B00CEAF89 /* Assets.xcassets */,
 				5AA8B5662C2FD11B00CEAF89 /* Preview Content */,
+				5A13D9B92C30331200CD92D7 /* ExploreView.swift */,
+				5A13D9BC2C30332E00CD92D7 /* ProfileView.swift */,
+				5A4EA6722C3051880015DC3A /* SettingsView.swift */,
+				5A5426FF2C311D2800CE2514 /* PackageView.swift */,
+				5A5427022C31960200CE2514 /* PackageVersionsView.swift */,
+				5A5427052C31984B00CE2514 /* PackageScoreView.swift */,
+				5A5427082C31ADB800CE2514 /* ScopesView.swift */,
+				5A54270B2C31BACB00CE2514 /* ScopeMembersView.swift */,
 			);
 			path = JSR;
 			sourceTree = "<group>";
@@ -81,8 +121,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				5A13D9AA2C2FDC3700CD92D7 /* PBXTargetDependency */,
 			);
 			name = JSR;
+			packageProductDependencies = (
+				5A13D9A42C2FDC0F00CD92D7 /* OpenAPIRuntime */,
+				5A13D9A72C2FDC1F00CD92D7 /* OpenAPIURLSession */,
+			);
 			productName = JSR;
 			productReference = 5AA8B55D2C2FD11A00CEAF89 /* JSR.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,11 @@
 				Base,
 			);
 			mainGroup = 5AA8B5542C2FD11A00CEAF89;
+			packageReferences = (
+				5A13D9A22C2FDBF900CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				5A13D9A32C2FDC0F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				5A13D9A62C2FDC1F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
 			productRefGroup = 5AA8B55E2C2FD11A00CEAF89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA8B5682C2FD11B00CEAF89 /* Preview Assets.xcassets in Resources */,
+				5A13D99C2C2FDB5D00CD92D7 /* openapi-generator-config.yaml in Resources */,
+				5A13D99B2C2FDB5D00CD92D7 /* openapi.yml in Resources */,
 				5AA8B5652C2FD11B00CEAF89 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +189,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4EA6732C3051880015DC3A /* SettingsView.swift in Sources */,
 				5AA8B5632C2FD11A00CEAF89 /* ContentView.swift in Sources */,
+				5A5427092C31ADB800CE2514 /* ScopesView.swift in Sources */,
+				5A13D9B62C30318300CD92D7 /* HomeView.swift in Sources */,
+				5A5427002C311D2800CE2514 /* PackageView.swift in Sources */,
+				5A54270C2C31BACB00CE2514 /* ScopeMembersView.swift in Sources */,
 				5AA8B5612C2FD11A00CEAF89 /* JSRApp.swift in Sources */,
+				5A5427032C31960200CE2514 /* PackageVersionsView.swift in Sources */,
+				5A5427062C31984B00CE2514 /* PackageScoreView.swift in Sources */,
+				5A13D9B22C3030B300CD92D7 /* PackageCardView.swift in Sources */,
+				5A13D9BD2C30332E00CD92D7 /* ProfileView.swift in Sources */,
+				5A13D9BA2C30331200CD92D7 /* ExploreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A13D9AA2C2FDC3700CD92D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5A13D9A92C2FDC3700CD92D7 /* OpenAPIGenerator */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5AA8B5692C2FD11B00CEAF89 /* Debug */ = {
@@ -287,9 +356,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.divy.JSR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,9 +388,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.divy.JSR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +419,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A13D9A22C2FDBF900CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+		5A13D9A32C2FDC0F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		5A13D9A62C2FDC1F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A13D9A42C2FDC0F00CD92D7 /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A13D9A32C2FDC0F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+		5A13D9A72C2FDC1F00CD92D7 /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A13D9A62C2FDC1F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+		5A13D9A92C2FDC3700CD92D7 /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A13D9A22C2FDBF900CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AA8B5552C2FD11A00CEAF89 /* Project object */;
 }
