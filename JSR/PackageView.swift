@@ -86,8 +86,8 @@ struct PackageView: View {
                 ScrollView {
                     HStack(spacing: 10) {
                         if let docs = docs {
-                            if docs.version?.value1.rekorLogId != nil {
-                                let rekorLogId = docs.version?.value1.rekorLogId
+                            if docs.version.value1.rekorLogId != nil {
+                                let rekorLogId = docs.version.value1.rekorLogId
                                 Button {
                                     UIApplication.shared.open(URL(string: "https://search.sigstore.dev/?logIndex=\(rekorLogId!)")!)
                                 } label: {

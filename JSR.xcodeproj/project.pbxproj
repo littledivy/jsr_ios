@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A13D99B2C2FDB5D00CD92D7 /* openapi.yml in Resources */ = {isa = PBXBuildFile; fileRef = 5A13D9992C2FDB5C00CD92D7 /* openapi.yml */; };
+		5A13D99B2C2FDB5D00CD92D7 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 5A13D9992C2FDB5C00CD92D7 /* openapi.yaml */; };
 		5A13D99C2C2FDB5D00CD92D7 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */; };
 		5A13D9A52C2FDC0F00CD92D7 /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 5A13D9A42C2FDC0F00CD92D7 /* OpenAPIRuntime */; };
 		5A13D9A82C2FDC1F00CD92D7 /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 5A13D9A72C2FDC1F00CD92D7 /* OpenAPIURLSession */; };
@@ -28,8 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A13D9992C2FDB5C00CD92D7 /* openapi.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = openapi.yml; path = ../../JSRClient/Sources/openapi.yml; sourceTree = "<group>"; };
-		5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = "openapi-generator-config.yaml"; path = "../../JSRClient/Sources/openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		5A13D9992C2FDB5C00CD92D7 /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
+		5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 		5A13D9B12C3030B300CD92D7 /* PackageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCardView.swift; sourceTree = "<group>"; };
 		5A13D9B52C30318300CD92D7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5A13D9B92C30331200CD92D7 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 				5A13D9B12C3030B300CD92D7 /* PackageCardView.swift */,
 				5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */,
 				5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */,
-				5A13D9992C2FDB5C00CD92D7 /* openapi.yml */,
+				5A13D9992C2FDB5C00CD92D7 /* openapi.yaml */,
 				5A13D9B52C30318300CD92D7 /* HomeView.swift */,
 				5AA8B5622C2FD11A00CEAF89 /* ContentView.swift */,
 				5AA8B5642C2FD11B00CEAF89 /* Assets.xcassets */,
@@ -177,7 +177,7 @@
 			files = (
 				5AA8B5682C2FD11B00CEAF89 /* Preview Assets.xcassets in Resources */,
 				5A13D99C2C2FDB5D00CD92D7 /* openapi-generator-config.yaml in Resources */,
-				5A13D99B2C2FDB5D00CD92D7 /* openapi.yml in Resources */,
+				5A13D99B2C2FDB5D00CD92D7 /* openapi.yaml in Resources */,
 				5AA8B5652C2FD11B00CEAF89 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
