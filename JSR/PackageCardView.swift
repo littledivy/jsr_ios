@@ -51,6 +51,9 @@ struct PackageCardView: View {
                                     if compat.bun == true {
                                         compatCount.append("bun")
                                     }
+                                    if compat.workerd == true {
+                                        compatCount.append("cloudflare-workers")
+                                    }
                                     if compat.node == true {
                                         compatCount.append("node")
                                     }

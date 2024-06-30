@@ -140,7 +140,7 @@ struct PackageView: View {
                             
                         }
                         NavigationLink(destination: Text("Docs")) {
-                            Text("Docs")
+                            Text("todo: Docs")
                         }
                         
                         NavigationLink(destination: PackageScoreView(client: client, package: package)) {
