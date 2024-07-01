@@ -25,12 +25,8 @@
 import OpenAPIURLSession
 import SwiftUI
 
-extension Components.Schemas.ScopeMember: Identifiable {
-  public var id: String { user.id }
-}
-
 struct ScopeMembersView: View {
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
   @State var members: [Components.Schemas.ScopeMember]?
 
   var scope: String

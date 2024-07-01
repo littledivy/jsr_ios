@@ -30,7 +30,7 @@ struct SettingsView: View {
   @AppStorage("loggedIn") var loggedIn: Bool?
   @AppStorage("avatarURL") var avatarURL: String?
 
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
   @State var accessTokenField: String = ""
 
   var body: some View {

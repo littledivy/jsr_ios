@@ -25,10 +25,6 @@
 import OpenAPIURLSession
 import SwiftUI
 
-extension String: Identifiable {
-  public var id: String { self }
-}
-
 struct PackageCardView: View {
   var package: Components.Schemas.Package
 

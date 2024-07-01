@@ -25,7 +25,7 @@
 import SwiftUI
 
 struct ScopesView: View {
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
   var scope: Components.Schemas.Scope
   @State var packages: [Components.Schemas.Package]?
 

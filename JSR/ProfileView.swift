@@ -25,17 +25,13 @@
 import OpenAPIURLSession
 import SwiftUI
 
-extension Components.Schemas.Scope: Identifiable {
-  public var id: String { scope }
-}
-
 struct ProfileView: View {
   @AppStorage("accessToken") var accessToken: String = ""
   @AppStorage("loggedIn") var loggedIn: Bool?
 
   @State var user: Components.Schemas.User?
   @State var scopes: [Components.Schemas.Scope]?
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
 
   func fetchUser() async {
     do {

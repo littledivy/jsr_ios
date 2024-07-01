@@ -26,7 +26,7 @@ import OpenAPIURLSession
 import SwiftUI
 
 struct PackageScoreView: View {
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
   @State var score: Components.Schemas.PackageScore?
   var package: Components.Schemas.Package
 

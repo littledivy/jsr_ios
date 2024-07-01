@@ -27,7 +27,7 @@ import SwiftUI
 import WebKit
 
 struct PackageView: View {
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
   var package: Components.Schemas.Package
 
   var version: String = "latest"
@@ -44,14 +44,14 @@ struct PackageView: View {
       let webView = WKWebView()
       webView.scrollView.isScrollEnabled = false
       webView.navigationDelegate = context.coordinator
-        let html = """
-      <html>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://jsr.io/styles.css">
-      <style>\(css)</style>
-      <div class="ddoc" id="docMain">\(text)</div>
-      </html>
-      """
+      let html = """
+        <html>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://jsr.io/styles.css">
+        <style>\(css)</style>
+        <div class="ddoc" id="docMain">\(text)</div>
+        </html>
+        """
 
       webView
         .loadHTMLString(html, baseURL: nil)
@@ -171,8 +171,8 @@ struct PackageView: View {
                 .foregroundColor(.secondary)
 
             }
-            NavigationLink(destination: Text("Docs")) {
-              Text("todo: Docs")
+            NavigationLink(destination: Text("todo: Docs")) {
+              Text("Docs")
             }
 
             NavigationLink(destination: PackageScoreView(client: client, package: package)) {
@@ -218,7 +218,7 @@ struct PackageView: View {
 
 #Preview {
   PackageView(
-    client: ClientObj(),
+    client: HTTPClient(),
     package: Components.Schemas.Package(
       scope: "divy",
       name: "sdl2",

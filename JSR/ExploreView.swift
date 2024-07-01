@@ -29,7 +29,7 @@ struct ExploreView: View {
   @State var search = ""
   @State var packages: [Components.Schemas.Package] = []
 
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
 
   func getPackage() {
     Task {

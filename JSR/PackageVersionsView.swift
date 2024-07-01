@@ -22,16 +22,11 @@
 //  THE SOFTWARE.
 //
 
-
 import OpenAPIURLSession
 import SwiftUI
 
-extension Components.Schemas.PackageVersion: Identifiable {
-  public var id: String { version }
-}
-
 struct PackageVersionsView: View {
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
   var package: Components.Schemas.Package
   @State var versions: [Components.Schemas.PackageVersion]?
 

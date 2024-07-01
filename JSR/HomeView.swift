@@ -27,7 +27,7 @@ import SwiftUI
 
 struct HomeView: View {
   @State private var searchText = ""
-  @ObservedObject var client: ClientObj
+  @ObservedObject var client: HTTPClient
 
   @State var packages: [Components.Schemas.Package] = []
 
@@ -38,7 +38,7 @@ struct HomeView: View {
       case .ok(let okResponse):
         switch okResponse.body {
         case .json(let res):
-            packages = res.featured
+          packages = res.featured
         }
       case .undocumented(let statusCode, _):
         print("🙉 \(statusCode)")
