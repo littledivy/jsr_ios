@@ -165,21 +165,24 @@ struct PackageView: View {
 
           List {
             NavigationLink(destination: PackageVersionsView(client: client, package: package)) {
-              Text("Versions")
-              Spacer()
-              Text(version)
-                .foregroundColor(.secondary)
-
+                HStack {
+                    Text("Versions")
+                    Spacer()
+                    Text(version)
+                        .foregroundColor(.secondary)
+                }
             }
             NavigationLink(destination: Text("todo: Docs")) {
               Text("Docs")
             }
 
             NavigationLink(destination: PackageScoreView(client: client, package: package)) {
-              Text("Score")
-              Spacer()
-              Text("\(String(package.score!))%")
-                .foregroundColor(.secondary)
+                HStack {
+                    Text("Score")
+                    Spacer()
+                    Text("\(String(package.score!))%")
+                        .foregroundColor(.secondary)
+                }
 
             }
           }
