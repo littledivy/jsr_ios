@@ -121,6 +121,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5A83E1F72C326D14001B391B /* PBXTargetDependency */,
 				5A13D9AA2C2FDC3700CD92D7 /* PBXTargetDependency */,
 			);
 			name = JSR;
@@ -160,6 +161,7 @@
 				5A13D9A22C2FDBF900CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
 				5A13D9A32C2FDC0F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
 				5A13D9A62C2FDC1F00CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+				5A83E1F42C326CDF001B391B /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			productRefGroup = 5AA8B55E2C2FD11A00CEAF89 /* Products */;
 			projectDirPath = "";
@@ -210,6 +212,10 @@
 		5A13D9AA2C2FDC3700CD92D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 5A13D9A92C2FDC3700CD92D7 /* OpenAPIGenerator */;
+		};
+		5A83E1F72C326D14001B391B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 5A83E1F62C326D14001B391B /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -445,6 +451,14 @@
 				minimumVersion = 1.0.1;
 			};
 		};
+		5A83E1F42C326CDF001B391B /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -462,6 +476,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5A13D9A22C2FDBF900CD92D7 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
 			productName = "plugin:OpenAPIGenerator";
+		};
+		5A83E1F62C326D14001B391B /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A83E1F42C326CDF001B391B /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

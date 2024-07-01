@@ -21,7 +21,7 @@ struct ExploreView: View {
           }
         case .undocumented(let statusCode, _):
           print("🙉 \(statusCode)")
-        case .badRequest(_):
+        case .badRequest:
           print("🙈 Bad request")
         }
       } catch {

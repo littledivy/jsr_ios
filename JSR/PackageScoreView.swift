@@ -18,9 +18,9 @@ struct PackageScoreView: View {
         }
       case .undocumented(let statusCode, _):
         print("🙉 \(statusCode)")
-      case .badRequest(_):
+      case .badRequest:
         print("🙈 Bad request")
-      case .notFound(_):
+      case .notFound:
         print("🙈 Not found")
       }
 

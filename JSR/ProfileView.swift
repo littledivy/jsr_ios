@@ -24,8 +24,7 @@ struct ProfileView: View {
         }
       case .undocumented(let statusCode, _):
         print("🙉 \(statusCode)")
-      case .unauthorized(let e):
-        print(e)
+      case .unauthorized(_):
         print("🙈 Unauthorized")
       }
     } catch {
@@ -42,8 +41,7 @@ struct ProfileView: View {
         }
       case .undocumented(let statusCode, _):
         print("🙉 \(statusCode)")
-      case .unauthorized(let e):
-        print(e)
+      case .unauthorized(_):
         print("🙈 Unauthorized")
       }
 

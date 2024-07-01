@@ -14,7 +14,7 @@ struct HomeView: View {
       case .ok(let okResponse):
         switch okResponse.body {
         case .json(let res):
-          packages = res.featured ?? res.newest
+            packages = res.featured
         }
       case .undocumented(let statusCode, _):
         print("🙉 \(statusCode)")

@@ -20,8 +20,14 @@ struct PackageView: View {
       let webView = WKWebView()
       webView.scrollView.isScrollEnabled = false
       webView.navigationDelegate = context.coordinator
-      let html =
-        "<html><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"https://jsr.io/styles.css\"><style>\(css)</style><div class=\"ddoc\" id=\"docMain\">\(text)</div></html>"
+        let html = """
+      <html>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://jsr.io/styles.css">
+      <style>\(css)</style>
+      <div class="ddoc" id="docMain">\(text)</div>
+      </html>
+      """
 
       webView
         .loadHTMLString(html, baseURL: nil)
@@ -162,9 +168,9 @@ struct PackageView: View {
             Spacer()
           }.padding()
 
-          if let d = docs {
+          if let bind = docs {
             let binding = Binding {
-              d
+              bind
             } set: {
               docs = $0
             }
@@ -188,12 +194,7 @@ struct PackageView: View {
 
 #Preview {
   PackageView(
-    client: ClientObj(
-      client: Client(
-        serverURL: try! Servers.server1(),
-        configuration: .init(dateTranscoder: .iso8601WithFractionalSeconds),
-        transport: URLSessionTransport()
-      )),
+    client: ClientObj(),
     package: Components.Schemas.Package(
       scope: "divy",
       name: "sdl2",

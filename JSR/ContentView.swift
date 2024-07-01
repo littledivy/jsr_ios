@@ -16,11 +16,25 @@ struct AuthenticationMiddleware {
 }
 
 class ClientObj: ObservableObject {
-  var client: Client
+    var client: Client
+    // swiftlint:disable force_try
+    init() {
+        self.client = Client(
+            serverURL: try! Servers.server1(),
+            configuration: .init(dateTranscoder: .iso8601WithFractionalSeconds),
+            transport: URLSessionTransport()
+        )
+    }
 
-  init(client: Client) {
-    self.client = client
-  }
+    func withAuth(token: String) {
+        self.client = Client(
+          serverURL: try! Servers.server1(),
+          configuration: .init(dateTranscoder: .iso8601WithFractionalSeconds),
+          transport: URLSessionTransport(),
+          middlewares: [AuthenticationMiddleware(authorizationHeaderFieldValue: token)]
+        )
+    }
+    // swiftlint:enable force_try
 }
 
 extension AuthenticationMiddleware: ClientMiddleware {
@@ -47,12 +61,7 @@ extension Components.Schemas.Package: Identifiable {
 struct ContentView: View {
   @State private var activeTab = 0
   @AppStorage("accessToken") var accessToken = ""
-  @StateObject var client: ClientObj = ClientObj(
-    client: Client(
-      serverURL: try! Servers.server1(),
-      configuration: .init(dateTranscoder: .iso8601WithFractionalSeconds),
-      transport: URLSessionTransport()
-    ))
+  @StateObject var client: ClientObj = ClientObj()
 
   @AppStorage("avatarURL") var avatarURL: String?
 
@@ -77,11 +86,11 @@ struct ContentView: View {
           if let url = avatarURL {
             AsyncImage(url: URL(string: url)) { image in
               let size = CGSize(width: 30, height: 30)
-              Image(size: size) { gc in
-                gc.clip(to: Path(ellipseIn: .init(origin: .zero, size: size)))
-                gc.draw(image, in: .init(origin: .zero, size: size))
+              Image(size: size) { gfx in
+                  gfx.clip(to: Path(ellipseIn: .init(origin: .zero, size: size)))
+                  gfx.draw(image, in: .init(origin: .zero, size: size))
                 if activeTab == 3 {
-                  gc.stroke(
+                    gfx.stroke(
                     Path(ellipseIn: .init(origin: .zero, size: size)), with: .color(.blue),
                     lineWidth: 2)
                 }
@@ -100,20 +109,10 @@ struct ContentView: View {
         .tag(3)
     }
     .onChange(of: accessToken) { _, _ in
-      client.client = Client(
-        serverURL: try! Servers.server1(),
-        configuration: .init(dateTranscoder: .iso8601WithFractionalSeconds),
-        transport: URLSessionTransport(),
-        middlewares: [AuthenticationMiddleware(authorizationHeaderFieldValue: accessToken)]
-      )
+        client.withAuth(token: accessToken)
     }
     .onAppear {
-      client.client = Client(
-        serverURL: try! Servers.server1(),
-        configuration: .init(dateTranscoder: .iso8601WithFractionalSeconds),
-        transport: URLSessionTransport(),
-        middlewares: [AuthenticationMiddleware(authorizationHeaderFieldValue: accessToken)]
-      )
+        client.withAuth(token: accessToken)
     }
   }
 }
