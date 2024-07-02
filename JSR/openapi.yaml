@@ -905,6 +905,10 @@ paths:
           required: true
           schema:
             $ref: "#/components/schemas/Version"
+        - name: all_symbols
+          in: query
+          schema:
+            type: boolean
       responses:
         "200":
           description: OK
@@ -2190,7 +2194,6 @@ components:
         - version
         - css
         - main
-        - toc
 
     PackageScore:
       type: object
