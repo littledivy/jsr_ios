@@ -73,8 +73,8 @@ struct PackageDocsView: View {
           .frame(height: max(parentHeight, self.webViewHeight))
           .edgesIgnoringSafeArea(.bottom)
       } else if notFound {
-          Text("No version found")
-            .padding()
+        Text("No version found")
+          .padding()
       } else {
         ProgressView()
           .padding()
