@@ -25,6 +25,7 @@
 		5A7D7DAF2C33CA7F001F36F1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D7DAE2C33CA7F001F36F1 /* WebView.swift */; };
 		5A7D7DB12C33D06F001F36F1 /* PackageSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D7DB02C33D06F001F36F1 /* PackageSymbolsView.swift */; };
 		5A83E1FA2C327FC7001B391B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A83E1F92C327FC7001B391B /* HTTPClient.swift */; };
+		5A8F956D2C3C05C10060B640 /* ScopeSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F956C2C3C05C10060B640 /* ScopeSettingsView.swift */; };
 		5AA8B5612C2FD11A00CEAF89 /* JSRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */; };
 		5AA8B5632C2FD11A00CEAF89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8B5622C2FD11A00CEAF89 /* ContentView.swift */; };
 		5AA8B5652C2FD11B00CEAF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA8B5642C2FD11B00CEAF89 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		5A7D7DAE2C33CA7F001F36F1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		5A7D7DB02C33D06F001F36F1 /* PackageSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageSymbolsView.swift; sourceTree = "<group>"; };
 		5A83E1F92C327FC7001B391B /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5A8F956C2C3C05C10060B640 /* ScopeSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeSettingsView.swift; sourceTree = "<group>"; };
 		5AA8B55D2C2FD11A00CEAF89 /* JSR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSRApp.swift; sourceTree = "<group>"; };
 		5AA8B5622C2FD11A00CEAF89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		5AA8B55F2C2FD11A00CEAF89 /* JSR */ = {
 			isa = PBXGroup;
 			children = (
+				5A8F956C2C3C05C10060B640 /* ScopeSettingsView.swift */,
 				5A13D9B12C3030B300CD92D7 /* PackageCardView.swift */,
 				5AA8B5602C2FD11A00CEAF89 /* JSRApp.swift */,
 				5A13D99A2C2FDB5C00CD92D7 /* openapi-generator-config.yaml */,
@@ -217,6 +220,7 @@
 				5AA8B5632C2FD11A00CEAF89 /* ContentView.swift in Sources */,
 				5A7D7DAC2C33CA41001F36F1 /* PackageDocsView.swift in Sources */,
 				5A7D7DB12C33D06F001F36F1 /* PackageSymbolsView.swift in Sources */,
+				5A8F956D2C3C05C10060B640 /* ScopeSettingsView.swift in Sources */,
 				5A83E1FA2C327FC7001B391B /* HTTPClient.swift in Sources */,
 				5A5427092C31ADB800CE2514 /* ScopesView.swift in Sources */,
 				5A13D9B62C30318300CD92D7 /* HomeView.swift in Sources */,

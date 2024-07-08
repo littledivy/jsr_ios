@@ -30,6 +30,7 @@ struct ScopesView: View {
   @State var packages: [Components.Schemas.Package]?
 
   func fetchScopePackages() async {
+    print(scope)
     do {
       let response = try await client.client.listScopePackages(path: .init(scope: scope.scope))
       switch response {
@@ -58,8 +59,7 @@ struct ScopesView: View {
             NavigationLink(destination: ScopeMembersView(client: client, scope: scope.scope)) {
               Text("Members")
             }
-
-            NavigationLink(destination: Text("todo: Settings")) {
+            NavigationLink(destination: ScopeSettingsView(client: client, scope: scope)) {
               Text("Settings")
             }
           }
