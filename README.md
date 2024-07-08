@@ -4,4 +4,6 @@
 
 <img src=https://github.com/littledivy/jsrforios/assets/34997667/a7948fc5-a9e6-4555-b77d-27c2529e250d width=300/>
 
+## Beta release
+
 Help test out beta builds using TestFlight: https://testflight.apple.com/join/7A7RtRzr
