@@ -101,12 +101,14 @@ struct PackageView: View {
               Text("Docs")
             }
 
-            NavigationLink(destination: PackageScoreView(client: client, package: package)) {
-              HStack {
-                Text("Score")
-                Spacer()
-                Text("\(String(package.score!))%")
-                  .foregroundColor(.secondary)
+            if let score = package.score {
+              NavigationLink(destination: PackageScoreView(client: client, package: package)) {
+                HStack {
+                  Text("Score")
+                  Spacer()
+                  Text("\(String(score))%")
+                    .foregroundColor(.secondary)
+                }
               }
             }
           }
