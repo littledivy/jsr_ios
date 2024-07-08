@@ -113,7 +113,7 @@ struct PackageView: View {
             }
           }
           .scrollDisabled(true)
-          .frame(height: 130)
+          .frame(height: package.score != nil ? 130 : 90)
           .listStyle(.inset)
 
           HStack {
