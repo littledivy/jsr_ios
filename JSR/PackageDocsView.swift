@@ -34,6 +34,7 @@ struct PackageDocsView: View {
 
   @Binding var docs: Components.Schemas.PackageDocs?
   @State var webViewHeight: CGFloat = 0
+  @State var notFound: Bool = false
 
   func getDocs() async {
     do {
@@ -52,7 +53,7 @@ struct PackageDocsView: View {
       case .badRequest(_):
         print("🙈 Bad request")
       case .notFound(_):
-        print("🙈 Not found")
+        notFound = true
       }
     } catch {
       print(error)
@@ -71,6 +72,9 @@ struct PackageDocsView: View {
           .padding(.horizontal)
           .frame(height: max(parentHeight, self.webViewHeight))
           .edgesIgnoringSafeArea(.bottom)
+      } else if notFound {
+          Text("No version found")
+            .padding()
       } else {
         ProgressView()
           .padding()
