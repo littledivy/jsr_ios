@@ -112,6 +112,17 @@ struct ProfileView: View {
           }
         }
 
+        if let user = user {
+          let scopes = Double(user.scopeUsage ?? 0)
+          let limit = Double(user.scopeLimit ?? 3)
+          Section(header: Text("Quotas").font(.title3).fontWeight(.bold).padding(.horizontal)) {
+            HStack {
+              Gauge(value: scopes, in: 0...limit) {}
+              Text("\(Int(scopes)) / \(Int(limit))")
+            }.padding()
+          }
+        }
+
         if let scopes = scopes {
           Section(header: Text("Scopes").font(.title3).fontWeight(.bold).padding(.horizontal)) {
             List {
@@ -131,7 +142,6 @@ struct ProfileView: View {
       .navigationTitle("Profile")
     }
     .onChange(of: accessToken) { _, _ in
-      print("on change")
       if accessToken.isEmpty {
         user = nil
         scopes = nil
